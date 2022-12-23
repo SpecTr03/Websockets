@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket Client</title>
+</head>
+<body>
+    <h1>Socket Client</h1>
+    <hr>
+
+    <p>
+        Server status:
+        <span id="lblOnline">Online</span>
+        <span id="lblOffline">Offline</span>
+    </p>
+
+    <div>
+        <div>
+            <input type="text" id="txtMessage">
+        </div>
+        <div>
+            <button id="btnEnviar">
+                Enviar
+            </button>
+        </div>
+        
+    </div>
+
+
+    <!--Agregando libreria de socketio en el cliente -->
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./js/socket-client.js"></script>
+</body>
+</html>
